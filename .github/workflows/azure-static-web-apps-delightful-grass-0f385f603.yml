@@ -30,6 +30,7 @@ jobs:
           github_id_token: ${{ secrets.GITHUB_TOKEN }}
           action: "upload"
           app_location: "/" # App source code path
+          api_location: "/"
           output_location: "public" # Built app content directory - optional
           app_build_command: "" # Отключает шаг сборки
           
