@@ -31,10 +31,9 @@ jobs:
           app_location: "/" # App source code path
           # output_location: "/" # Built app content directory - optional
           app_build_command: "" # Отключает шаг сборки
-          github_id_token: ${{ secrets.GITHUB_TOKEN }}
+          # github_id_token: ${{ secrets.GITHUB_TOKEN }}
           
-          ###### End of Repository/Build Configurations ######
-
+          
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
     runs-on: ubuntu-latest
