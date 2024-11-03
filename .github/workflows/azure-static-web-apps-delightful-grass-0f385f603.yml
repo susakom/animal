@@ -33,7 +33,7 @@ jobs:
           api_location: ""
           output_location: "./" # Built app content directory - optional
           app_build_command: "" # Отключает шаг сборки
-          # skip_api_build: true
+          skip_api_build: true
           
           
   close_pull_request_job:
